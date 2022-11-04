@@ -1,0 +1,11 @@
+- print:
+    - {if: [true, 'ok', 'fall']}
+
+- print:
+    - if:
+        - false
+        - "fall"
+        - if:
+            - true
+            - "ok"
+            - "fall"
